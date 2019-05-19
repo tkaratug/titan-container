@@ -1,0 +1,21 @@
+{
+  "name": "tkaratug/titan-container",
+  "description": "Simple and lightweight dependency injection container",
+  "keywords": ["container", "dependency", "injection"],
+  "homepage": "https://github.com/tkaratug/titan-container",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+      {
+          "name": "Turan Karatuğ",
+          "email": "tkaratug@hotmail.com.tr",
+          "homepage": "http://www.turankaratug.com"
+      }
+  ],
+  "require": {
+      "php": ">=7.0.0"
+  },
+  "autoload": {
+      "psr-4": {"Titan\\": "src"}
+  }
+}
