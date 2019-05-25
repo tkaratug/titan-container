@@ -24,29 +24,6 @@ class Container
     protected $instances = [];
 
     /**
-     * @var Container
-     */
-    protected static $instance;
-
-    private function __construct() {}
-    private function __clone() {}
-    private function __wakeup() {}
-
-    /**
-     * Initialize Container
-     *
-     * @return Container
-     */
-    public static function init()
-    {
-        if (is_null(static::$instance)) {
-            static::$instance = new static;
-        }
-
-        return static::$instance;
-    }
-
-    /**
      * @param string $class
      * @param bool $singleton
      * @return Container

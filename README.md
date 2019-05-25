@@ -13,8 +13,8 @@ Via composer
 ```php
 use Titan\Container;
 
-// initialize the container
-$container = Container::init();
+// Create a container instance
+$container = new Container();
 
 // Without alias
 $container->bind(Example\Foo\Bar::class);
