@@ -98,9 +98,9 @@ class Container
 
     /**
      * @param string $key
-     * @return string
+     * @return mixed
      */
-    public function get(string $key): string
+    public function get(string $key)
     {
         if (!$this->isBinded($key)) {
             throw new UndefinedKeyException('Undefined key for ' . $key);
